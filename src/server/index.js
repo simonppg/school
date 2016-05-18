@@ -2,8 +2,17 @@ import express from 'express'
 const app = express()
 import api from 'src/server/api'
 
-//express sirve los archivos estaticos
 app.use(express.static('public'))
+
+app.use('/api/votes', (req, res, next) => {
+	console.log('middleware 1')
+	next()
+})
+
+app.use('/api/votes', (req, res, next) => {
+	console.log('middleware 2')
+	next()
+})
 
 app.use('/api', api)
 
