@@ -6,7 +6,7 @@
     "babel-cli": "^6.9.0",
     "babel-preset-es2015": "^6.1.18",
     "express": "^4.13.4",
-    "jquery": "^2.1.4",
+    "jquery": ">=3.4.0",
     "mongoose": "^4.4.17",
     "page": "^1.6.4",
     "qs": "^6.0.0"
